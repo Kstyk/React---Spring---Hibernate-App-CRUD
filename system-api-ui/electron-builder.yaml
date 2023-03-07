@@ -1,0 +1,26 @@
+appId: com.example.app
+copyright: Example co
+productName: MyApp
+
+asar: true
+
+directories:
+  buildResources: dist-assets/
+  output: dist/
+
+files:
+  - package.json
+  - build/
+  - node_modules/
+
+mac:
+  target: dmg
+  category: public.app-category.tools
+
+win:
+  target: nsis
+
+linux:
+  target:
+    - deb
+    - AppImage
